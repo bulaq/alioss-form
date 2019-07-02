@@ -1,14 +1,14 @@
 {
-    "name": "airan/alioss-form",
+    "name": "bulaq/alioss-form",
     "description": "laravel-admin扩展，web直传阿里OSS（file，image，editor）",
     "type": "library",
     "keywords": ["laravel-admin", "extension"],
-    "homepage": "https://github.com/airan/alioss-form",
+    "homepage": "https://github.com/bulaq/alioss-form",
     "license": "MIT",
     "authors": [
         {
-            "name": "airan",
-            "email": "airan587@163.com"
+            "name": "xirwajim",
+            "email": "xirwajim@gmail.com"
         }
     ],
     "require": {
@@ -20,13 +20,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Airan\\AliOssForm\\": "src/"
+            "Bulaq\\AliOssForm\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Airan\\AliOssForm\\AliOssFormServiceProvider"
+                "Bulaq\\AliOssForm\\AliOssFormServiceProvider"
             ]
 
         }
