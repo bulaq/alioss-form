@@ -1,6 +1,6 @@
 <?php
 
-namespace Airan\AliOssForm;
+namespace Bulaq\AliOssForm;
 
 use Encore\Admin\Extension;
 

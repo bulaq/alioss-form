@@ -1,6 +1,6 @@
 <?php
 
-namespace Airan\AliOssForm\Http\Controllers;
+namespace Bulaq\AliOssForm\Http\Controllers;
 
 use Encore\Admin\Layout\Content;
 use Illuminate\Routing\Controller;

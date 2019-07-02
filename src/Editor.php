@@ -1,6 +1,6 @@
 <?php
 
-namespace Airan\AliOssForm;
+namespace Bulaq\AliOssForm;
 
 use Encore\Admin\Form\Field;
 
@@ -8,11 +8,11 @@ class Editor extends Field
 {
     protected $view = 'alioss-form::editor';
     protected static $css = [
-        'vendor/airan/alioss-form/wangEditor-3.0.10/release/wangEditor.min.css',
+        'vendor/bulaq/alioss-form/wangEditor-3.0.10/release/wangEditor.min.css',
     ];
     protected static $js = [
-        'vendor/airan/alioss-form/wangEditor-3.0.10/release/wangEditor.min.js',
-        'vendor/airan/alioss-form/upload.min.js',
+        'vendor/bulaq/alioss-form/wangEditor-3.0.10/release/wangEditor.min.js',
+        'vendor/bulaq/alioss-form/upload.min.js',
     ];
     public function render()
     {

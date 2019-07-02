@@ -1,6 +1,6 @@
 <?php
 
-namespace Airan\AliOssForm;
+namespace Bulaq\AliOssForm;
 
 use Encore\Admin\Form\Field;
 
@@ -8,12 +8,12 @@ class Image extends Field
 {
     protected $view = 'alioss-form::image';
     protected static $css = [
-        'vendor/airan/alioss-form/style.css',
+        'vendor/bulaq/alioss-form/style.css',
     ];
     protected static $js = [
-        'vendor/airan/alioss-form/Sortable.min.js',
-        'vendor/airan/alioss-form/plupload-2.1.2/js/plupload.full.min.js',
-        'vendor/airan/alioss-form/upload.min.js',
+        'vendor/bulaq/alioss-form/Sortable.min.js',
+        'vendor/bulaq/alioss-form/plupload-2.1.2/js/plupload.full.min.js',
+        'vendor/bulaq/alioss-form/upload.min.js',
     ];
     public function render()
     {

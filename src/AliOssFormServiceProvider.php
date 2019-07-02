@@ -1,6 +1,6 @@
 <?php
 
-namespace Airan\AliOssForm;
+namespace Bulaq\AliOssForm;
 
 use Encore\Admin\Admin;
 use Encore\Admin\Form;
@@ -23,7 +23,7 @@ class AliOssFormServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole() && $assets = $extension->assets()) {
             $this->publishes(
-                [$assets => public_path('vendor/airan/alioss-form')],
+                [$assets => public_path('vendor/bulaq/alioss-form')],
                 'alioss-form'
             );
         }
