@@ -29,9 +29,9 @@ class AliOssFormServiceProvider extends ServiceProvider
         }
 
         Admin::booting(function () {
-            Form::extend('file', File::class);
-            Form::extend('image', Image::class);
-            Form::extend('editor', Editor::class);
+            Form::extend('ali_file', File::class);
+            Form::extend('ali_image', Image::class);
+            Form::extend('ali_editor', Editor::class);
         });
 
 
