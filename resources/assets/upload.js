@@ -66,6 +66,7 @@
                     accessid = obj['accessid'];
                     host = obj['host'];
                     cdn_url = obj['cdn_url'];
+                    oss_process = obj['oss_process'];
                     policyBase64 = obj['policy'];
                     signature = obj['signature'];
                     expire = parseInt(obj['expire']);
@@ -199,10 +200,10 @@
                     var path = key + filename_new;
                     var all_path = cdn_url + '/' + path;
                     if(multi) {
-                        $('#'+file.id).html('<span class="upload_del_btn" data-filename="'+path+'" onclick="'+ "del_pic(this,true)" +'">删除</span><img src="' + all_path +'?x-oss-process=image/resize,m_fill,w_100,h_100"><input type="hidden" class="Js_upload_input" name="'+id.split('_')[0]+'[]" value="'+path+'">');
+                        $('#'+file.id).html('<span class="upload_del_btn" data-filename="'+path+'" onclick="'+ "del_pic(this,true)" +'">删除</span><img src="' + all_path + oss_process +'"><input type="hidden" class="Js_upload_input" name="'+id.split('_')[0]+'[]" value="'+path+'">');
                     }else{
                         $('#'+file.id+'_canvas').remove();
-                        upload_warp.prepend('<img data-filename="'+path+'" src="' + all_path +'?x-oss-process=image/resize,m_fill,w_100,h_100">').find('input.Js_upload_input').val(path);
+                        upload_warp.prepend('<img data-filename="'+path+'" src="' + all_path + oss_process + '">').find('input.Js_upload_input').val(path);
                     }
                 },
                 Error: function(up, err) {

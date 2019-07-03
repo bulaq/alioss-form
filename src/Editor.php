@@ -12,7 +12,7 @@ class Editor extends Field
     ];
     protected static $js = [
         'vendor/bulaq/alioss-form/wangEditor-3.0.10/release/wangEditor.min.js',
-        'vendor/bulaq/alioss-form/upload.min.js',
+        'vendor/bulaq/alioss-form/upload.js',
     ];
     public function render()
     {

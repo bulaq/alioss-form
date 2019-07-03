@@ -13,7 +13,7 @@ class Image extends Field
     protected static $js = [
         'vendor/bulaq/alioss-form/Sortable.min.js',
         'vendor/bulaq/alioss-form/plupload-2.1.2/js/plupload.full.min.js',
-        'vendor/bulaq/alioss-form/upload.min.js',
+        'vendor/bulaq/alioss-form/upload.js',
     ];
     public function render()
     {

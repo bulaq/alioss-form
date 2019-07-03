@@ -16,6 +16,7 @@ class AliOssFormController extends Controller
         $host = $config['OSS_HOST'];
         // CDN 前端显示URL
         $cdn_url = $config['OSS_URL'];
+        $oss_process = $config['OSS_PROCESS'];
 
         $dir = 'file/'.date('Ym').'/'.date('d');          // 用户上传文件时指定的前缀。 file/201812/01
 
