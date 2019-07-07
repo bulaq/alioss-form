@@ -43,6 +43,7 @@ class AliOssFormController extends Controller
         $response = array();
         $response['accessid'] = $id;
         $response['host'] = $host;
+        $response['oss_process'] = $oss_process;
         $response['cdn_url'] = $cdn_url;
         $response['policy'] = $base64_policy;
         $response['signature'] = $signature;
